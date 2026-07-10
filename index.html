@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dubai Car Rental</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="mobile-menu__nav">
+                <a href="#about" class="mobile-menu__link" data-key="nav_about">About Us</a>
+                <a href="#offers" class="mobile-menu__link" data-key="nav_offers">Offers</a>
+                <a href="#reviews" class="mobile-menu__link" data-key="nav_reviews">Reviews</a>
+                <a href="#contacts" class="mobile-menu__link" data-key="nav_contacts">Contacts</a>
+            </nav>
+            <div class="mobile-menu__contacts">
+                <a href="tel:+9710000000" class="mobile-menu__phone">+971 (00) 000-0000</a>
+            </div>
+        </div>
+
+
+        <div class="header__container">
+
+            <div class="header__left">
+                <button class="header__burger" id="burgerBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="header__nav">
+                    <a href="#offers" class="header__link" data-key="nav_cars">Car List</a>
+                    <a href="#about" class="header__link header__link--active" data-key="nav_about">About Us</a>
+                    <a href="#reviews" class="header__link" data-key="nav_reviews">Reviews</a>
+                </nav>
+            </div>
+
+            <a href="#" class="header__logo">
+                <img src="./assets/logo.svg" alt="TRINITY CAR RENTAL BOUTIQUE">
+            </a>
+
+            <div class="header__right">
+                <a href="tel:+971585907875" class="header__phone">+971 58 590 7875</a>
+
+                <div class="header__dropdown header__dropdown-town">
+                    <button class="header__dropdown-btn">Dubai</button>
+                    <div class="header__dropdown-menu">
+                        <a href="#" class="header__dropdown-link header__dropdown-link--active">Dubai</a>
+                        <a href="#" class="header__dropdown-link">Moscow</a>
+                        <a href="#" class="header__dropdown-link">Budapest</a>
+                        <a href="#" class="header__dropdown-link">Wiesbaden</a>
+                    </div>
+                </div>
+
+                <div class="header__dropdown header__dropdown-language">
+                    <button class="header__dropdown-btn header__dropdown-lang"></button>
+                    <div class="header__dropdown-menu">
+                        <a href="#" class="header__dropdown-link">ENG</a>
+                        <a href="#" class="header__dropdown-link">RUS</a>
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1 class="hero-title" data-key="hero_title">Dubai</h1>
+        <h2 class="hero-subtitle" data-key="hero_subtitle">luxury car rental</h2>
+
+        <div class="hero__socials">
+            <a href="#" class="hero__social-link tg">
+                <img src="./assets/telegram.svg" alt="Telegram">
+            </a>
+            <a href="#" class="hero__social-link wa">
+                <img src="./assets/whatsapp.svg" alt="WhatsApp">
+            </a>
+        </div>
+    </section>
+
+    <section class="popular">
+        <div class="popular__container">
+
+            <div class="popular__card">
+                <div class="popular__image-wrapper">
+                    <img src="./assets/lamborghini-sto.png" alt="Lamborghini Huracan STO" class="popular__img">
+                </div>
+                <div class="popular__card-content">
+                    <h3 class="popular__card-title" data-key="popular_card_title">Rent Car</h3>
+                    <div class="popular__card-price">
+                        <span class="popular__price-label" data-key="popular_price_from">Rent is from aed</span>
+                        <span class="popular__price-value">2 400$</span>
+                        <span class="popular__price-label" data-key="popular_price_day">per day</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular__controls">
+                <h2 class="popular__title" data-key="popular_title">Most Popular</h2>
+
+                <div class="popular__search">
+                    <input type="text" placeholder="Car search" class="popular__search-input"
+                        data-key="popular_search_placeholder">
+                    <button class="popular__search-btn" aria-label="Search">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="popular__slider">
+                    <button class="popular__arrow popular__arrow--up" aria-label="Up"></button>
+
+                    <div class="popular__line">
+                        <div class="popular__dot"></div>
+                    </div>
+
+
+                    <div class="popular__list-wrapper">
+                        <div class="popular__list">
+                            <div class="popular__item">
+                                <span class="popular__item-brand">Audi</span>
+                                <span class="popular__item-model">R8 Coupe V10 Performance</span>
+                            </div>
+                            <div class="popular__item">
+                                <span class="popular__item-brand">Lamborghini</span>
+                                <span class="popular__item-model">Urus Performante</span>
+                            </div>
+                            <div class="popular__item popular__item--active">
+                                <span class="popular__item-brand">Lamborghini</span>
+                                <span class="popular__item-model">Huracan EVO Spyder</span>
+                            </div>
+                            <div class="popular__item">
+                                <span class="popular__item-brand">Ferrari</span>
+                                <span class="popular__item-model">Roma Spider</span>
+                            </div>
+                            <div class="popular__item">
+                                <span class="popular__item-brand">Range Rover</span>
+                                <span class="popular__item-model">Autobiography New 2024</span>
+                            </div>
+                            <div class="popular__item">
+                                <span class="popular__item-brand">Porsche</span>
+                                <span class="popular__item-model">911 Turbo S (992)</span>
+                            </div>
+                            <div class="popular__item">
+                                <span class="popular__item-brand">Mercedes-Benz</span>
+                                <span class="popular__item-model">G63 AMG Grand Edition</span>
+                            </div>
+                            <div class="popular__item">
+                                <span class="popular__item-brand">BMW</span>
+                                <span class="popular__item-model">M8 Competition Gran Coupe</span>
+                            </div>
+                            <div class="popular__item">
+                                <span class="popular__item-brand">Bentley</span>
+                                <span class="popular__item-model">Continental GT V8</span>
+                            </div>
+                            <div class="popular__item">
+                                <span class="popular__item-brand">Aston Martin</span>
+                                <span class="popular__item-model">DBS Volante</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="popular__arrow popular__arrow--down" aria-label="Down"></button>
+                </div>
+
+                <a href="#" class="popular__view-all" data-key="btn_view_all">VIEW ALL</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="offers" class="offers">
+        <div class="offers__container">
+
+            <div class="offers__tabs">
+                <button class="offers__tab offers__tab--active" data-target="all" data-key="tab_all">All</button>
+                <button class="offers__tab" data-target="special" data-key="tab_special">Special Offer</button>
+                <button class="offers__tab" data-target="new" data-key="tab_new">New car</button>
+                <button class="offers__tab" data-target="popular" data-key="tab_popular">Most popular</button>
+                <button class="offers__tab" data-target="daily" data-key="tab_daily">Daily</button>
+            </div>
+
+            <div class="offers__grid">
+
+                <div class="car-card" data-category="special">
+                    <div class="car-card__image-wrapper">
+                        <img src="./assets/urus.png" alt="Lamborghini Urus" class="car-card__img">
+                    </div>
+                    <div class="car-card__content">
+                        <h3 class="car-card__title">Lamborghini Urus</h3>
+                        <a href="#" class="car-card__btn" data-key="btn_rent">RENT</a>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="new">
+                    <div class="car-card__image-wrapper">
+                        <img src="./assets/roma.png" alt="Ferrari Roma" class="car-card__img">
+                    </div>
+                    <div class="car-card__content">
+                        <h3 class="car-card__title">Ferrari Roma</h3>
+                        <a href="#" class="car-card__btn" data-key="btn_rent">RENT</a>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="popular">
+                    <div class="car-card__image-wrapper">
+                        <img src="./assets/ghost.png" alt="Rolls-Royce Ghost" class="car-card__img">
+                    </div>
+                    <div class="car-card__content">
+                        <h3 class="car-card__title">Rolls-Royce Ghost</h3>
+                        <a href="#" class="car-card__btn" data-key="btn_rent">RENT</a>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="daily">
+                    <div class="car-card__image-wrapper">
+                        <img src="./assets/porsche.png" alt="Porsche 911 Turbo S" class="car-card__img">
+                    </div>
+                    <div class="car-card__content">
+                        <h3 class="car-card__title">Porsche 911 Turbo S</h3>
+                        <a href="#" class="car-card__btn" data-key="btn_rent">RENT</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-section__container">
+        </div>
+        <div class="offers__action">
+            <a href="#" class="btn-view-all" data-key="btn_view_all">VIEW ALL</a>
+        </div>
+        <div class="about__container">
+
+
+            <h2 class="about__title" data-key="about_title">About Us</h2>
+
+            <div class="about__stats">
+
+                <div class="stat-item">
+                    <div class="stat-item__meta">
+                        <div class="stat-item__value" data-target="8">0</div>
+                        <span class="stat-item__label" data-key="stat_year">year</span>
+                    </div>
+                    <p class="stat-item__desc" data-key="stat_desc_1">We've come a long way from a 2-people company to
+                        winning at Webby's.</p>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-item__meta">
+                        <div class="stat-item__value" data-target="72">0</div>
+                        <span class="stat-item__label" data-key="stat_cars">cars</span>
+                    </div>
+                    <p class="stat-item__desc" data-key="stat_desc_2">We've come a long way from a 2-people company to
+                        winning at Webby's.</p>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-item__meta">
+                        <div class="stat-item__value" data-target="190">0</div>
+                        <span class="stat-item__label" data-key="stat_people">people</span>
+                    </div>
+                    <p class="stat-item__desc" data-key="stat_desc_3">We've come a long way from a 2-people company to
+                        winning at Webby's.</p>
+                </div>
+
+            </div>
+
+            <div class="about__quote">
+                <blockquote class="about__quote-text" data-key="about_quote_text">
+                    I'm with cars for over 18 years. My auto passion and attention to details will make your experience
+                    with us second to none. Guaranteed.
+                </blockquote>
+                <div class="about__author">
+                    <span class="about__author-name" data-key="about_author_name">Aldiyar, CEO</span>
+                    <span class="about__author-role" data-key="about_author_role">CEO Trinity car rental boutique</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="founder">
+        <img class="founder__photo" src="assets/founder.png" alt="Фото владельца салона">
+    </section>
+
+    <section id="reviews" class="reviews">
+        <h2 class="reviews__title" data-key="reviews_title">Reviews</h2>
+
+        <div class="reviews__grid">
+
+            <div class="reviews__card">
+                <img src="./assets/review-1.png" alt="Review 1" class="reviews__img">
+            </div>
+
+            <div class="reviews__card">
+                <img src="./assets/review-2.png" alt="Review 2" class="reviews__img">
+                <button class="reviews__play-btn" aria-label="Play video">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="reviews__card">
+                <img src="./assets/review-3.png" alt="Review 3" class="reviews__img">
+            </div>
+
+            <div class="reviews__card">
+                <img src="./assets/review-4.png" alt="Review 4" class="reviews__img">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="advantages" id="advantages">
+        <div class="advantages__container">
+
+            <h2 class="advantages__title" data-key="advantages_title">Advantages</h2>
+
+            <div class="advantages__grid">
+
+                <div class="advantage-card">
+                    <div class="advantage-card__bg">
+                        <img src="./assets/advantage-1.png" alt="Fleet" class="advantage-card__img">
+                    </div>
+                    <div class="advantage-card__content">
+                        <p class="advantage-card__text" data-key="advantage_text_1">40+ unique cars for<br>rent from our
+                            fleet</p>
+                    </div>
+                </div>
+
+                <div class="advantage-card advantage-card--active">
+                    <div class="advantage-card__bg">
+                        <img src="./assets/advantage-2.png" alt="Delivery" class="advantage-card__img">
+                    </div>
+                    <div class="advantage-card__content">
+                        <p class="advantage-card__text" data-key="advantage_text_2">Delivery and return<br>of cars in
+                            Dubai 24/7</p>
+                    </div>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-card__bg">
+                        <img src="./assets/advantage-3.png" alt="Insurance" class="advantage-card__img">
+                    </div>
+                    <div class="advantage-card__content">
+                        <p class="advantage-card__text" data-key="advantage_text_3">Insurance without a<br>deductible
+                            for each car</p>
+                    </div>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-card__bg">
+                        <img src="./assets/advantage-4.png" alt="No recording" class="advantage-card__img">
+                    </div>
+                    <div class="advantage-card__content">
+                        <p class="advantage-card__text" data-key="advantage_text_4">No video or audio<br>recording in
+                            the car</p>
+                    </div>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-card__bg">
+                        <img src="./assets/advantage-5.png" alt="Support" class="advantage-card__img">
+                    </div>
+                    <div class="advantage-card__content">
+                        <p class="advantage-card__text" data-key="advantage_text_5">24/7 technical support</p>
+                    </div>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-card__bg">
+                        <img src="./assets/advantage-6.png" alt="Premium" class="advantage-card__img">
+                    </div>
+                    <div class="advantage-card__content">
+                        <p class="advantage-card__text" data-key="advantage_text_6">All models have a premium package
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="contacts__container">
+
+            <div class="contacts__map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115611.31976075197!2d55.1583063852033!3d25.1070549097893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai!5e0!3m2!1sen!2sae!4v1700000000000!5m2!1sen!2sae"
+                    class="contacts__map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="contacts__form-wrapper">
+                <h2 class="contacts__title" data-key="contacts_title">Ask us anything</h2>
+
+                <form class="contacts__form" action="#">
+                    <div class="form-group">
+                        <input type="text" class="form-input" id="contacts-name" placeholder="Name"
+                            data-key="form_placeholder_name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-input" id="contacts-email" placeholder="E-mail"
+                            data-key="form_placeholder_email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input id="contacts-tel" type="tel" class="form-input" placeholder="+7 (999) 999 - 99 - 99"
+                            data-key="form_placeholder_phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-input form-input--textarea" placeholder="Message" id="contacts-msg"
+                            data-key="form_placeholder_message" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit" data-key="btn_submit_request">
+                        SEND THE REQUEST
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="discount" id="discount">
+        <div class="discount__container">
+
+            <div class="discount-card">
+
+                <img class="discount__left" src="/assets/discount-left.svg">
+                <img class="discount__right" src="/assets/discount-right.svg">
+
+                <h2 class="discount-card__title" data-key="discount_title">
+                    Get a discount of up to <span>60%</span>
+                </h2>
+
+                <p class="discount-card__subtitle" data-key="discount_subtitle">
+                    Get the latest articles and business updates that you need to know, you'll even get special
+                    recommendations weekly.
+                </p>
+
+                <form class="discount-card__form" action="#">
+                    <div class="discount-card__input-wrapper">
+                        <svg class="discount-card__icon" width="21" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <input type="email" class="discount-card__input" placeholder="Your email"
+                            data-key="discount_placeholder_email" required>
+                    </div>
+
+                    <button type="submit" class="discount-card__btn" data-key="btn_receive">RECEIVE</button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="brands-marquee">
+            <div class="brands-marquee__track">
+
+                <div class="brands-marquee__item">Audi</div>
+                <div class="brands-marquee__item">BMW</div>
+                <div class="brands-marquee__item brands-marquee__item--active">Rolls-Royce</div>
+                <div class="brands-marquee__item">Cadillac</div>
+                <div class="brands-marquee__item">Maserati</div>
+                <div class="brands-marquee__item">Lamborghini</div>
+                <div class="brands-marquee__item">Bentley</div>
+                <div class="brands-marquee__item">Porsche</div>
+
+                <div class="brands-marquee__item" aria-hidden="true">Audi</div>
+                <div class="brands-marquee__item" aria-hidden="true">BMW</div>
+                <div class="brands-marquee__item brands-marquee__item--active" aria-hidden="true">Rolls-Royce</div>
+                <div class="brands-marquee__item" aria-hidden="true">Cadillac</div>
+                <div class="brands-marquee__item" aria-hidden="true">Maserati</div>
+                <div class="brands-marquee__item" aria-hidden="true">Lamborghini</div>
+                <div class="brands-marquee__item" aria-hidden="true">Bentley</div>
+                <div class="brands-marquee__item" aria-hidden="true">Porsche</div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+
+            <div class="footer__top">
+
+                <div class="footer__nav">
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title" data-key="footer_col_title_1">For Customers</h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#about" data-key="nav_about">About Us</a></li>
+                            <li><a href="#advantages" data-key="footer_link_conditions">Advantages</a></li>
+                            <li><a href="#discount" data-key="footer_link_testimonials">Discount</a></li>
+                            <li><a href="#contacts" data-key="nav_contacts">Contacts</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-col">
+                        <h4 class="footer__nav-title" data-key="nav_cars">Car List</h4>
+                        <ul class="footer__nav-list">
+                            <li><a href="#" data-key="footer_car_suvs">SUVs</a></li>
+                            <li><a href="#" class="footer__link--active"
+                                    data-key="footer_car_convertibles">Convertibles</a></li>
+                            <li><a href="#" data-key="footer_car_sports">Sports Cars</a></li>
+                            <li><a href="#" data-key="tab_popular">Premium</a></li>
+                            <li><a href="#" data-key="footer_car_coupe">Coupe</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-col footer__nav-col--brands">
+                        <h4 class="footer__nav-title" data-key="footer_col_title_2">Car brand</h4>
+                        <div class="footer__brands-grid">
+                            <ul class="footer__nav-list">
+                                <li><a href="#">BMW</a></li>
+                                <li><a href="#">AUDI</a></li>
+                                <li><a href="#">Ferrari</a></li>
+                                <li><a href="#">Rolls-Royce</a></li>
+                                <li><a href="#">Bentley</a></li>
+                            </ul>
+                            <ul class="footer__nav-list">
+                                <li><a href="#">Range Rover</a></li>
+                                <li><a href="#">Lamborghini</a></li>
+                                <li><a href="#">Cadillac</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__divider"></div>
+
+                <div class="footer__contacts">
+                    <div class="footer__phone-wrapper">
+                        <a href="tel:+971585907875" class="footer__phone">+971 58 590 7875</a>
+                        <div class="footer__social-icons">
+                            <a href="#" class="social-icon">
+                                <img src="assets/telegram.svg" alt="Telegram" class="social-icon__img">
+                            </a>
+                            <a href="#" class="social-icon">
+                                <img src="assets/whatsapp.svg" alt="WhatsApp" class="social-icon__img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="footer__btn-callback" data-key="btn_callback">REQUEST A CALLBACK</button>
+
+                    <p class="footer__address" data-key="footer_address">24 4th St - Al Quoz - Al Quoz Industrial Area 3
+                        - Dubai</p>
+
+                    <form class="footer__subscribe-form" action="#">
+                        <input type="email" class="footer__subscribe-input" placeholder="Write your E-mail"
+                            data-key="footer_placeholder_subscribe" required>
+                        <button type="submit" class="footer__subscribe-btn" data-key="btn_submit">SUBMIT</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="footer__payments">
+                <img src="assets/payments/visa.svg" alt="Visa" class="payment-img">
+                <img src="assets/payments/mastercard.svg" alt="Mastercard" class="payment-img">
+                <img src="assets/payments/amex.svg" alt="American Express" class="payment-img">
+                <img src="assets/payments/unionpay.svg" alt="UnionPay" class="payment-img">
+                <img src="assets/payments/tether.svg" alt="Tether" class="payment-img">
+                <img src="assets/payments/gpay.svg" alt="Google Pay" class="payment-img">
+                <img src="assets/payments/applepay.svg" alt="Apple Pay" class="payment-img">
+                <img src="assets/payments/giropay.svg" alt="Giropay" class="payment-img">
+                <img src="assets/payments/cashu.svg" alt="Cashu" class="payment-img">
+                <img src="assets/payments/safetypay.svg" alt="SafetyPay" class="payment-img">
+            </div>
+
+            <div class="footer__bottom">
+                <a href="#" class="footer__privacy" data-key="footer_privacy">Privacy Policy</a>
+
+                <p class="footer__copyright" data-key="footer_copyright">©2023 TRINITY. All rights reserved</p>
+
+                <div class="footer__social-links">
+                    <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook" class="footer__bottom-icon"></a>
+                    <a href="#"><img src="assets/icons/tiktok.svg" alt="TikTok" class="footer__bottom-icon"></a>
+                    <a href="#"><img src="assets/icons/youtube.svg" alt="YouTube" class="footer__bottom-icon"></a>
+                    <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram" class="footer__bottom-icon"></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <div class="modal" id="rentModal">
+        <div class="modal__overlay" id="modalOverlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="modalCloseBtn" aria-label="Close modal">×</button>
+
+            <h3 class="modal__title"><span data-key="modal_title_rent">Rent</span> <span id="modalCarName">Car</span>
+            </h3>
+            <p class="modal__subtitle" data-key="modal_subtitle">Leave your details, and our manager will contact you
+                within 5 minutes.</p>
+
+            <form class="modal__form" id="rentForm">
+                <input type="hidden" id="formCarInput" name="car_name">
+
+                <div class="modal__field">
+                    <input type="text" class="modal__input" placeholder="Your Name" data-key="modal_placeholder_name"
+                        required>
+                </div>
+                <div class="modal__field">
+                    <input type="tel" class="modal__input" placeholder="Phone Number" data-key="modal_placeholder_phone"
+                        required>
+                </div>
+
+                <button type="submit" class="modal__btn-submit" data-key="modal_btn_submit">SEND REQUEST</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
